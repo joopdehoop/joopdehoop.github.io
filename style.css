@@ -9,9 +9,7 @@ body {
     justify-content: center; /* horizontal centering */
     align-items: center;     /* vertical centering */
 }
-input {
-    padding: 5px;
-}
+
 .container {
     display: flex;
     flex-direction: column;  /* stack children vertically */
@@ -36,9 +34,12 @@ input {
 }
 
 form select, input {
-    width: 200px;
+    padding: 5px;
+    width: 300px;
 }
-
+.halfsize {
+    width: 132px;
+}
 #search-box {
     border-radius: 2em;
     padding: 10px;
@@ -48,11 +49,16 @@ form select, input {
     border: solid 1px #aaa;
 }
 #advanced-button {
-    margin: 0 auto;
     padding: 10px;
-    border-radius: 8px;
-    background-color: blue;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to bottom, #4d90fe,#357ae8);
     color: white;
+    border: 1px solid #2f5bb7;
+    box-shadow: none;
 }
 
 .search-button {
@@ -94,6 +100,7 @@ h1 {
 
 #search-options {
     border: 0;
+    width: 100%;
     margin-top: 1em;
     border-collapse: collapse;
 }
