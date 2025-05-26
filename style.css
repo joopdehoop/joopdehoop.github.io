@@ -64,7 +64,7 @@ form select, input {
 .search-button {
     background-color: #f8f9fa;
     color: #202124;
-    border: 0;
+    border: 1px solid white;;
     box-shadow: 0;
     padding: 10px;
 }
