@@ -6,77 +6,54 @@
     </head>
     <body>
         <div class="container">
-            <h1>My Google Search</h1>
-            <p><a href="index.html">Regular</a> | <a href="image.html">Image</a> | Advanced</p>
+            <h1>My <span class="google1">G</span><span class="google2">o</span><span class="google3">o</span><span class="google1">g</span><span class="google4">l</span><span class="google2">e</span> Advanced Search</h1>
+            <div id="search-menu"><a href="index.html">Back To Google Search</a></div>
             <form action="https://www.google.com/search" method="get">
-                <input type="text" id="searchbox" name="q" placeholder="Search Google..." required><br />
-                <input type="text" name="as_q" placeholder="All of these words"><br />
-                <input type="text" name="as_epq" placeholder="exacte woordgroep"><br />
-                <input type="text" name="as_oq" placeholder="one or more words"><br />
-                <input type="text" name="as_eq" placeholder="none of these words"><br />
-                <input type="text" name="as_nlo" placeholder="Lowest"> to <input type="text" name="as_nhi" placeholder="Highest"><br />
-
-                <input type="text" name="lr" value="" placeholder="Select a language" list="languages"><br />
-                <datalist id="languages">
-                    <option value="lang_af">Afrikaans</option>
-                    <option value="lang_ar">Arabic</option>
-                    <option value="lang_bg">Bulgarian</option>
-                    <option value="lang_ca">Catalan</option>
-                    <option value="lang_cs">Czech</option>
-                    <option value="lang_da">Danish</option>
-                    <option value="lang_de">German</option>
-                    <option value="lang_el">Greek</option>
-                    <option value="lang_en">English</option>
-                    <option value="lang_es">Spanish</option>
-                    <option value="lang_fi">Finnish</option>
-                    <option value="lang_fr">French</option>
-                    <option value="lang_he">Hebrew</option>
-                    <option value="lang_hu">Hungarian</option>
-                    <option value="lang_id">Indonesian</option>
-                    <option value="lang_it">Italian</option>
-                    <option value="lang_ja">Japanese</option>
-                    <option value="lang_ko">Korean</option>
-                    <option value="lang_nl">Dutch</option>
-                </datalist>
-                <input type="text" name="cr" value="" placeholder="Select a country" list="countries" ><br />
-                <datalist id="countries">
-                    <option value="countryAF">Afghanistan</option>
-                    <option value="countryAL">Albania</option>
-                    <option value="countryDZ">Algeria</option>
-                    <option value="countryAS">American Samoa</option>
-                    <option value="countryAD">Andorra</option>
-                    <option value="countryAO">Angola</option>
-                    <option value="countryAI">Anguilla</option>
-                    <option value="countryAQ">Antarctica</option>
-                    <option value="countryAG">Antigua and Barbuda</option>
-                    <option value="countryAR">Argentina</option>
-                    <option value="countryAM">Armenia</option>
-                    <option value="countryAW">Aruba</option>
-                    <option value="countryAU">Australia</option>
-                    <option value="countryAT">Austria</option>
-                    <option value="countryAZ">Azerbaijan</option>
-                    <option value="countryBS">Bahamas</option>
-                    <option value="countryBH">Bahrain</option>
-                    <option value="countryBD">Bangladesh</option>
-                    <option value="countryBB">Barbados</option>
-                    <option value="countryBY">Belarus</option>
-                    <option value="countryBE">Belgium</option>
-                    <option value="countryBZ">Belize</option>
-                    <option value="countryBJ">Benin</option>
-                    <option value="countryBM">Bermuda</option>
-                    <option value="countryBT">Bhutan</option>
-                    <option value="countryBO">Bolivia</option>
-                    <option value="countryBQ">Bonaire, Sint Eustatius and Saba</option>
-                    <option value="countryBA">Bosnia and Herzegovina</option>
-                    <option value="countryBW">Botswana</option>
-                    <option value="countryBV">Bouvet Island</option>
-                </datalist>
-
-                <input type="text" name="as_qdr" placeholder="Last update"><br />
-                <input type="text" name="as_sitesearch" placeholder="Site or domain"><br />
-                <input type="text" name="as_filetype" placeholder="Filetype"><br />
-                <input type="hidden" name="hl" value="nl"><br />
-                <button type="submit">Search</button>
+                <div>
+                    Find pages with...
+                    <table id="search-options">
+                        <tr>
+                            <td>all these words:</td>
+                            <td><input type="text" name="as_q" placeholder="All of these words"></td>
+                        </tr>
+                        <tr>
+                            <td>this exact word or phrase:</td>
+                            <td><input type="text" name="as_epq" placeholder="Exact words or phrase"></td>
+                        </tr>
+                        <tr>
+                            <td>any of these words:</td>
+                            <td><input type="text" name="as_oq" placeholder="Any of these words"></td>
+                        </tr>
+                        <tr>
+                            <td>none of these words:</td>
+                            <td><input type="text" name="as_eq" placeholder="None of these words"></td>
+                        </tr>
+                        <tr>
+                            <td>a number ranging from:</td>
+                            <td><input type="text" name="as_nlo" placeholder="Lowest"> to <input type="text" name="as_nhi" placeholder="Highest"></td>
+                        </tr>
+                        <tr>
+                            <td> this site or domain:</td>
+                            <td><input type="text" name="as_sitesearch" placeholder="Site or domain"></td>
+                        </tr>
+                        <tr>
+                            <td>this filetype:</td>
+                            <td>
+                                <select id="filetype" name="as_filetype">
+                                    <option value="">Any</option>
+                                    <option value="pdf">Adobe Acrobat PDF (.PDF)</option>
+                                    <option value="docx">Microsoft Word Document (.docx)</option>
+                                    <option value="xlsx">Microsoft Excel Sheet (.xlsx)</option>
+                                    <option value="pptx">Powerpoint Presentation (.pptx)</option>
+                                    <option value="txt">Text file (.txt)</option>
+                                    <option value="csv">Comma separated file (.csv)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="hl" value="nl"><br />
+                </div>
+                <p><button type="submit" id="advanced-button">Advanced search</button></p>
             </form>
         </div>
     </body>

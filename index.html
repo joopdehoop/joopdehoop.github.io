@@ -6,14 +6,20 @@
     </head>
     <body>
         <div id="search-menu">
-                <p><a href="image.html">Image</a> | <a href="advanced.html">Advanced</a></p>
+                <a href="image.html">Image Search</a> | <a href="advanced.html">Advanced Search</a>
         </div>
         
         <div class="container">
-            <h1>My Google Search</h1>
+
+            <div><h1>My <span class="google1">G</span><span class="google2">o</span><span class="google3">o</span><span class="google1">g</span><span class="google4">l</span><span class="google2">e</span> Search</h1></div>
             <form action="https://www.google.com/search" method="get">
-                <input id=searchbox type="text" name="q" placeholder="Search Google..." required>
-                <button type="submit">Search</button>
+                <div>
+                    <p><input id="search-box" type="text" name="q" placeholder="Search Google..." required></p>
+                    
+                </div>
+                <div>
+                    <p><button type="submit" class="search-button">Google Search</button> <button type="submit" name="btnI" value="Ik+doe+een+gok" class="search-button">I'm feeling lucky</button></p>
+                </div>
             </form>
         </div>
     </body>
