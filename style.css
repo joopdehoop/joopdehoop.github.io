@@ -6,11 +6,13 @@ body {
     padding: 20px;
 }
 #search-box {
+    width: 100%;
     align: center;
     border: round
 }
 #search-menu {
     display: block;
+    position: absolute;
     top: 20px;
     right: 20px;
 }
