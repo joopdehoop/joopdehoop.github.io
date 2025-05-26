@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Google Search</title>
+        <title>My Google Search - Advanced</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
             <h1>My Google Search</h1>
             <form action="https://www.google.com/search" method="get">
-                <input type="text" name="q" placeholder="Search Google..." required>
+                <input type="text" name="q" placeholder="Search Google..." required><br />
                 <input type="text" name="as_q" placeholder="All of these words"><br />
                 <input type="text" name="as_epq" placeholder="exacte woordgroep"><br />
                 <input type="text" name="as_oq" placeholder="one or more words"><br />
                 <input type="text" name="as_eq" placeholder="none of these words"><br />
                 <input type="text" name="as_nlo" placeholder="Lowest"> to <input type="text" name="as_nhi" placeholder="Highest"><br />
 
-                <input type="text" name="lr" value="lang_af" list="languages"><br />
+                <input type="text" name="lr" value="" placeholder="Select a language" list="languages"><br />
                 <datalist id="languages">
                     <option value="lang_af">Afrikaans</option>
                     <option value="lang_ar">Arabic</option>
@@ -37,7 +38,7 @@
                     <option value="lang_ko">Korean</option>
                     <option value="lang_nl">Dutch</option>
                 </datalist>
-                <input type="text" name="cr" value="countryAF" list="countries" ><br />
+                <input type="text" name="cr" value="" placeholder="Select a country" list="countries" ><br />
                 <datalist id="countries">
                     <option value="countryAF">Afghanistan</option>
                     <option value="countryAL">Albania</option>
