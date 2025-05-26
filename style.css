@@ -5,7 +5,15 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+#search-box {
+    align: center;
+    border: round
+}
+#search-menu {
+    display: block;
+    top: 20px;
+    right: 20px;
+}
 h1 {
     color: #2c3e50;
     font-size: 2em;
