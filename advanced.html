@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Google Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>My Google Search</h1>
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search Google..." required>
+                <input type="text" name="as_q" placeholder="All of these words"><br />
+                <input type="text" name="as_epq" placeholder="exacte woordgroep"><br />
+                <input type="text" name="as_oq" placeholder="one or more words"><br />
+                <input type="text" name="as_eq" placeholder="none of these words"><br />
+                <input type="text" name="as_nlo" placeholder="Lowest"> to <input type="text" name="as_nhi" placeholder="Highest"><br />
+
+                <input type="text" name="lr" value="lang_af" list="languages"><br />
+                <datalist id="languages">
+                    <option value="lang_af">Afrikaans</option>
+                    <option value="lang_ar">Arabic</option>
+                    <option value="lang_bg">Bulgarian</option>
+                    <option value="lang_ca">Catalan</option>
+                    <option value="lang_cs">Czech</option>
+                    <option value="lang_da">Danish</option>
+                    <option value="lang_de">German</option>
+                    <option value="lang_el">Greek</option>
+                    <option value="lang_en">English</option>
+                    <option value="lang_es">Spanish</option>
+                    <option value="lang_fi">Finnish</option>
+                    <option value="lang_fr">French</option>
+                    <option value="lang_he">Hebrew</option>
+                    <option value="lang_hu">Hungarian</option>
+                    <option value="lang_id">Indonesian</option>
+                    <option value="lang_it">Italian</option>
+                    <option value="lang_ja">Japanese</option>
+                    <option value="lang_ko">Korean</option>
+                    <option value="lang_nl">Dutch</option>
+                </datalist>
+                <input type="text" name="cr" value="countryAF" list="countries" ><br />
+                <datalist id="countries">
+                    <option value="countryAF">Afghanistan</option>
+                    <option value="countryAL">Albania</option>
+                    <option value="countryDZ">Algeria</option>
+                    <option value="countryAS">American Samoa</option>
+                    <option value="countryAD">Andorra</option>
+                    <option value="countryAO">Angola</option>
+                    <option value="countryAI">Anguilla</option>
+                    <option value="countryAQ">Antarctica</option>
+                    <option value="countryAG">Antigua and Barbuda</option>
+                    <option value="countryAR">Argentina</option>
+                    <option value="countryAM">Armenia</option>
+                    <option value="countryAW">Aruba</option>
+                    <option value="countryAU">Australia</option>
+                    <option value="countryAT">Austria</option>
+                    <option value="countryAZ">Azerbaijan</option>
+                    <option value="countryBS">Bahamas</option>
+                    <option value="countryBH">Bahrain</option>
+                    <option value="countryBD">Bangladesh</option>
+                    <option value="countryBB">Barbados</option>
+                    <option value="countryBY">Belarus</option>
+                    <option value="countryBE">Belgium</option>
+                    <option value="countryBZ">Belize</option>
+                    <option value="countryBJ">Benin</option>
+                    <option value="countryBM">Bermuda</option>
+                    <option value="countryBT">Bhutan</option>
+                    <option value="countryBO">Bolivia</option>
+                    <option value="countryBQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="countryBA">Bosnia and Herzegovina</option>
+                    <option value="countryBW">Botswana</option>
+                    <option value="countryBV">Bouvet Island</option>
+                </datalist>
+
+                <input type="text" name="as_qdr" placeholder="Last update"><br />
+                <input type="text" name="as_sitesearch" placeholder="Site or domain"><br />
+                <input type="text" name="as_filetype" placeholder="Filetype"><br />
+                <input type="hidden" name="hl" value="nl"><br />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+https://www.google.com/search?hl=nl&as_q=test&as_epq=exacte+woordgroep&as_oq=one+or+more+words&as_eq=none+of+these+words&as_nlo=100&as_nhi=200&lr=lang_af&cr=countryAF&as_qdr=d&as_sitesearch=&as_occt=any&as_filetype=&tbs=
